@@ -74,6 +74,17 @@ mediapipe_proto_library(
 )
 
 mediapipe_proto_library(
+    name = "wrapper_hand_tracking_proto",
+    srcs = ["wrapper_hand_tracking.proto"],
+    visibility = ["//visibility:public"],
+    deps = [
+      "//mediapipe/framework/formats:landmark_proto",
+      "//mediapipe/framework/formats:detection_proto",
+      "//mediapipe/framework/formats:rect_proto",
+    ],
+)
+
+mediapipe_proto_library(
     name = "location_data_proto",
     srcs = ["location_data.proto"],
     portable_deps = ["//mediapipe/framework/formats/annotation:rasterization_cc_proto"],

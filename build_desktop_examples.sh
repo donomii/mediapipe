@@ -103,6 +103,8 @@ for app in ${apps}; do
       else
         graph_suffix="desktop_live"
       fi
+      echo "${out_dir}/${target_name}_cpu" \
+        --calculator_graph_config_file=mediapipe/graphs/"${graph_name}_${graph_suffix}.pbtxt"
       GLOG_logtostderr=1 "${out_dir}/${target_name}_cpu" \
         --calculator_graph_config_file=mediapipe/graphs/"${graph_name}_${graph_suffix}.pbtxt"
     fi
