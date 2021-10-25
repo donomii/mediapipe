@@ -11,7 +11,7 @@ The detector works best when your palm is facing the camera.
 ## Installation
 
 
-Because the install procedure for mediapipe is so difficult, I have included the compiled binaries in the this repository.  Run ```sh mousecursor.sh`` from the command line, and it should just work.
+Because the install procedure for mediapipe is so difficult, I have included the compiled binaries in the this repository.  Run ```sh mousecursor.sh``` from the command line, and it should just work.
 
 If you want to customise it, you will need to install mediapipe first.  Follow the installation instructions for the main mediapipe repository, then run sh mousecursor.sh
 
